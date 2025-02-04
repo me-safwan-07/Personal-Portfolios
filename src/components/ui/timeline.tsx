@@ -37,7 +37,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
       ref={containerRef}
     >
       {/* <div className="max-w-7xl mx-auto py-10 px-4 md:px-8 lg:px-10"> */}
-        <h2 className="mx-auto py-10 px-4 md:px-8 lg:px-10 text-lg md:text-7xl mb-4 text-black dark:text-white max-w-4xl">
+        <h2 className="mx-auto py-10 px-4 md:px-8 lg:px-10 text-xl md:text-6xl mb-4 text-black dark:text-white max-w-4xl">
           Changelog from my journey
         </h2>
       {/* </div> */}
