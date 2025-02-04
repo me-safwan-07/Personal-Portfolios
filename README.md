@@ -15,7 +15,7 @@ This is a modern personal portfolio built using **React, TypeScript, Vite, and T
 ## 📂 Project Structure
 
 ```
-me-safwan-07-personal-portfolios/
+personal-portfolios/
 ├── README.md
 ├── index.html
 ├── package.json
@@ -52,12 +52,12 @@ me-safwan-07-personal-portfolios/
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/yourusername/me-safwan-07-personal-portfolios.git
+   git clone https://github.com/yourusername/personal-portfolios.git
    ```
 
 2. **Navigate into the project directory:**
    ```bash
-   cd me-safwan-07-personal-portfolios
+   cd personal-portfolios
    ```
 
 3. **Install dependencies:**
@@ -72,7 +72,7 @@ me-safwan-07-personal-portfolios/
 
 5. **Open the app in your browser:**
    ```
-   http://localhost:3000
+   http://localhost:5173
    ```
 
 ## 📌 Usage
@@ -95,4 +95,3 @@ This project is open-source and available under the **MIT License**.
 ---
 
 ✨ *Developed by [Muhammed Safwan](https://github.com/me-safwan-07). Feel free to fork and customize!* 🚀
-```
