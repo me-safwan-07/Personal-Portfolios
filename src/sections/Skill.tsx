@@ -1,53 +1,9 @@
-import PythonLogo from '../assets/svg/Python-Logo.svg';
-import TailwindCSSLogo from '../assets/svg/Tailwind-Logo.svg';
 import ReactLogo from '../assets/svg/react-logo.svg';
 import TypescriptLogo from '../assets/svg/TS-Logo.svg';
-import FigmaLogo from '../assets/svg/figma-logo.svg';
 import VercelLogo from '../assets/svg/Vercel-Logo.svg';
-import EthereumLogo from '../assets/svg/ethereum-logo.svg';
-import SolidityLogo from '../assets/svg/solidity-logo.svg';
-import EthersJSLogo from '../assets/svg/ethersjs-logo.svg';
-import WagmiLogo from '../assets/svg/wagmi-logo.svg';
-import RainbowKitLogo from '../assets/svg/rainbowkit-logo.svg';
-import OpenAILogo from '../assets/svg/openai-logo.svg';
 
 export const logos = [
-  {
-    src: EthereumLogo,
-    alt: 'Ethereum Logo',
-    name: 'Ethereum',
-    width: 30,
-    height: 30,
-  },
-  {
-    src: SolidityLogo,
-    alt: 'Solidity Logo',
-    name: 'Solidity',
-    width: 30,
-    height: 30,
-  },
-  {
-    src: EthersJSLogo,
-    alt: 'Ethers.js Logo',
-    name: 'Ethers.js',
-    width: 30,
-    height: 30,
-  },
-  { src: WagmiLogo, alt: 'Wagmi Logo', name: 'Wagmi', width: 30, height: 30 },
-  {
-    src: RainbowKitLogo,
-    alt: 'RainbowKit Logo',
-    name: 'RainbowKit',
-    width: 30,
-    height: 30,
-  },
-  {
-    src: OpenAILogo,
-    alt: 'OpenAI Logo',
-    name: 'AI/ML',
-    width: 30,
-    height: 30,
-  },
+  
   { src: ReactLogo, alt: 'React Logo', name: 'React', width: 30, height: 30 },
   {
     src: VercelLogo,
@@ -64,20 +20,72 @@ export const logos = [
     height: 30,
   },
   {
-    src: TailwindCSSLogo,
+    src: "https://cdn.worldvectorlogo.com/logos/tailwind-css-2.svg",
     alt: 'Tailwind CSS Logo',
     name: 'Tailwind CSS',
     width: 30,
     height: 30,
   },
   {
-    src: PythonLogo,
-    alt: 'Python Logo',
-    name: 'Python',
+    src: "https://cdn.worldvectorlogo.com/logos/javascript-1.svg",
+    alt: "JavaScript Logo",
+    name: "JavaScript",
     width: 30,
     height: 30,
   },
-  { src: FigmaLogo, alt: 'Figma Logo', name: 'Figma', width: 23, height: 23 },
+  {
+    src: "https://cdn.worldvectorlogo.com/logos/nodejs-icon.svg",
+    alt: "Node.js Logo",
+    name: "Node.js",
+    width: 30,
+    height: 30,
+  },
+//   {
+//     src: "https://cdn.worldvectorlogo.com/logos/express-109.svg",
+//     alt: "Express Logo",
+//     name: "Express",
+//     width: 40,
+//     height: 40,
+//   },
+  {
+    src: "https://cdn.worldvectorlogo.com/logos/mongodb-icon-1.svg",
+    alt: "MongoDB Logo",
+    name: "MongoDB",
+    width: 40,
+    height: 40,
+  },
+//   prisma
+  {
+    src: "https://cdn.worldvectorlogo.com/logos/prisma-3.svg",
+    alt: "Prisma Logo",
+    name: "Prisma",
+    width: 40,
+    height: 40,
+  },
+//   vite
+  {
+    src: "https://cdn.worldvectorlogo.com/logos/vitejs.svg",
+    alt: "Vite Logo",
+    name: "Vite",
+    width: 40,
+    height: 40,
+  },
+//   framer motion
+  {
+    src: "https://cdn.worldvectorlogo.com/logos/framer-motion.svg",
+    alt: "Framer Motion Logo",
+    name: "Framer Motion",
+    width: 40,
+    height: 40,
+  },
+//   GitBranch
+  {
+    src: "https://cdn.worldvectorlogo.com/logos/git-icon.svg",
+    alt: "Git Logo",
+    name: "Git",
+    width: 40,
+    height: 40,
+  },
 ];
 
 interface LogoProps {
@@ -139,8 +147,8 @@ export const LogoList = ({ startIndex = 0 }: { startIndex?: number }) => (
 
 export function Skill() {
   return (
-    <div className="lg:mt-22 relative z-40 mx-auto mb-[-75px] mt-[50px] flex flex-col gap-3 lg:mb-0 lg:max-w-[1080px] lg:gap-6">
-      <h2 className="mx-auto mb-3 w-full px-8 text-center text-sm lg:mb-0 lg:max-w-none lg:px-0 lg:text-xl">
+    <div className="lg:mt-22 sm:-mb-13 relative z-40 mx-auto mb-[-5px] mt-[50px] flex flex-col gap-3 lg:mb-0 lg:max-w-[1080px] lg:gap-6">
+      <h2 className="mx-auto mb-3 w-full px-8 text-center text-xl lg:mb-0 lg:max-w-none lg:px-0 lg:text-xl">
         Leveraging state-of-the-art technologies
       </h2>
 
@@ -169,9 +177,9 @@ export function Skill() {
         </div>
       </div>
 
-      <p className="mx-auto w-full max-w-[250px] text-center text-sm opacity-60 lg:max-w-none">
+      {/* <p className="mx-auto w-full max-w-[250px] text-center text-sm opacity-60 lg:max-w-none">
         Staying ahead of the curve and surfing the waves of innovation
-      </p>
+      </p> */}
     </div>
   );
 }

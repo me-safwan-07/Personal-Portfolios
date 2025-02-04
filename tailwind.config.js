@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-    darkMode: ["class", "class"],
+    darkMode: ["class"],
     content: ["./index.html", "./src/**/*.{ts,tsx,js,jsx}"],
     theme: {
     	extend: {
@@ -83,8 +83,5 @@ module.exports = {
 			}
     	}
     },
-    plugins: [
-      require("tailwindcss-animate"),
-      require('tailwind-scrollbar')({ nocompatible: true })
-    ]
+    plugins: [require("tailwindcss-animate")]
 }

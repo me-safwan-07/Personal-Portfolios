@@ -1,6 +1,6 @@
 // import { google } from 'googleapis';
 // import { Octokit } from '@octokit/rest';
-    import NumberTicker from '../components/ui/NumberTicker';
+import NumberTicker from '@/components/ui/NumberTicker';
 // import { cache } from 'react';
 
 // Types for our stats
@@ -130,9 +130,9 @@ export const GithubStats =  () => {
     ]
 
   return (
-    <section className="mx-auto mb-20 max-w-[1440px] px-4 py-1 lg:mb-32">
+    <section className="mx-auto mb-20 max-w-[1440px] px-4 py-2 lg:mb-32">
       <div className="mx-auto max-w-6xl">
-        <h2 className="mb-8 text-center text-base font-semibold text-white lg:text-2xl">
+        <h2 className="mb-8 text-center text-base font-semibold text-white gap-10 lg:text-2xl">
           Github Stats 
         </h2>
         <div className="flex flex-col items-center justify-center md:flex-row">
