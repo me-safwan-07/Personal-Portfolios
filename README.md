@@ -1,51 +1,98 @@
-# React + TypeScript + Vite
+# Personal Portfolio - React, TypeScript, Vite, TailwindCSS
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a modern personal portfolio built using **React, TypeScript, Vite, and TailwindCSS**. It showcases skills, projects, GitHub statistics, and contact details in an interactive and responsive design.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- ⚡ **React + TypeScript** - Component-based architecture with type safety.
+- 🚀 **Vite** - Fast and optimized development experience.
+- 🎨 **TailwindCSS** - Utility-first styling for a sleek UI.
+- 🌍 **Responsive Design** - Mobile-friendly and optimized for all devices.
+- 🔗 **Social Media Integration** - Interactive hover effects for links.
+- 📜 **Smooth Scroll Navigation** - Jump between sections seamlessly.
+- 🎬 **Animations & Effects** - Enhancing user experience with subtle animations.
 
-## Expanding the ESLint configuration
+## 📂 Project Structure
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+```
+me-safwan-07-personal-portfolios/
+├── README.md
+├── index.html
+├── package.json
+├── vite.config.ts
+├── tailwind.config.js
+├── tsconfig.json
+├── src/
+│   ├── App.tsx
+│   ├── index.css
+│   ├── main.tsx
+│   ├── assets/
+│   ├── components/
+│   │   ├── Social.tsx
+│   │   ├── Wrapper.tsx
+│   │   ├── hero.tsx
+│   │   ├── ui/
+│   │   ├── icons.tsx
+│   ├── sections/
+│   │   ├── About.tsx
+│   │   ├── Contact.tsx
+│   │   ├── FooterSection.tsx
+│   │   ├── GithubStats.tsx
+│   │   ├── Hero.tsx
+│   │   ├── Navbars.tsx
+│   │   ├── Projects.tsx
+│   │   ├── Skill.tsx
+│   │   ├── TimeLineSection.tsx
+│   ├── lib/
+│   │   ├── utils.ts
+└── public/
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## 🛠️ Installation & Setup
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/yourusername/me-safwan-07-personal-portfolios.git
+   ```
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+2. **Navigate into the project directory:**
+   ```bash
+   cd me-safwan-07-personal-portfolios
+   ```
+
+3. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+
+4. **Start the development server:**
+   ```bash
+   npm run dev
+   ```
+
+5. **Open the app in your browser:**
+   ```
+   http://localhost:3000
+   ```
+
+## 📌 Usage
+
+- Navigate through sections: **About**, **Skills**, **Projects**, **GitHub Stats**, **Contact**.
+- Connect via **LinkedIn, GitHub, and Twitter** with smooth hover effects.
+- Explore a **visually appealing** and **high-performance** portfolio.
+
+## 🎯 Tech Stack
+
+- **Frontend:** React, TypeScript, Vite
+- **Styling:** TailwindCSS, Framer Motion
+- **Icons:** Lucide-react
+- **Build Tools:** PostCSS, ESLint, Prettier
+
+## 📄 License
+
+This project is open-source and available under the **MIT License**.
+
+---
+
+✨ *Developed by [Muhammed Safwan](https://github.com/me-safwan-07). Feel free to fork and customize!* 🚀
 ```
-# vite-react-tailwindcss-shadcn-project-starter
