@@ -67,3 +67,12 @@
     @apply bg-background text-foreground;
   }
 }
+
+.fixed-navbar {
+  position: fixed;
+  bottom: 0; /* or top: 0; depending on where it is */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 50; /* Lower if necessary */
+  pointer-events: auto; /* Ensures it's clickable */
+}
