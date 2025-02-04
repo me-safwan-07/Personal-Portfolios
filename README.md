@@ -2,6 +2,15 @@
 
 This is a modern personal portfolio built using **React, TypeScript, Vite, and TailwindCSS**. It showcases skills, projects, GitHub statistics, and contact details in an interactive and responsive design.
 
+<div>
+    <a href="https://www.loom.com/share/9903d61336bb4d9eb40e58f9b673e2e6">
+      <p>Personal Portfolio - Watch Video</p>
+    </a>
+    <a href="https://www.loom.com/share/9903d61336bb4d9eb40e58f9b673e2e6">
+      <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/9903d61336bb4d9eb40e58f9b673e2e6-d4b254e53476a057-full-play.gif">
+    </a>
+</div>
+
 ## 🚀 Features
 
 - ⚡ **React + TypeScript** - Component-based architecture with type safety.
