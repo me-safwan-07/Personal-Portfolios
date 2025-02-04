@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const AboutSection: React.FC = () => {
   return (
-    <section className="bg-black lg:mt-18 relative z-40 mx-auto  flex flex-col gap-3 text-white ">
+    <section className="bg-black lg:mt-18 relative  mx-auto  flex flex-col gap-3 text-white ">
       <div className="container px-4 md:px-6 mx-auto lg:mb-0 mb-[-75px] mt-[50px] lg:max-w-[1080px] lg:gap-6">
         <div className="grid items-center gap-6 lg:grid-cols-2 lg:gap-12">
           <motion.div
