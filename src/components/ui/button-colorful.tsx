@@ -8,7 +8,7 @@ interface ButtonColorfulProps extends React.ButtonHTMLAttributes<HTMLButtonEleme
 
 export function ButtonColorful({
     className,
-    label = "Explore Components",
+    label = "",
     ...props
 }: ButtonColorfulProps) {
     return (

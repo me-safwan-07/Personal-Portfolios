@@ -15,24 +15,13 @@ interface NavBarProps {
   scrollToSection: (sectionId: string) => void
 }
 
-export function NavBar({ items, className, scrollToSection }: NavBarProps) {
+export function NavBar({ items , scrollToSection , className }: NavBarProps) {
   const [activeTab, setActiveTab] = useState(items[0].name)
-  // const [isMobile, setIsMobile] = useState(false)
-
-  // useEffect(() => {
-  //   const handleResize = () => {
-  //     setIsMobile(window.innerWidth < 768)
-  //   }
-
-  //   handleResize()
-  //   window.addEventListener("resize", handleResize)
-  //   return () => window.removeEventListener("resize", handleResize)
-  // }, [])
 
   return (
     <div
       className={cn(
-        "fixed bottom-0 sm:top-0 left-1/2 -translate-x-1/2 z-50 mb-6 sm:pt-6",
+        "fixed bottom-0 sm:top-0 left-1/2 -translate-x-1/2 z-10 mb-6 sm:pt-6",
         className,
       )}
     >
@@ -42,8 +31,9 @@ export function NavBar({ items, className, scrollToSection }: NavBarProps) {
           const isActive = activeTab === item.name
 
           return (
-            <div
+            <a
               key={item.name}
+              href={item.url}
               onClick={() => {
                 setActiveTab(item.name)
                 scrollToSection(item.url)
@@ -76,7 +66,7 @@ export function NavBar({ items, className, scrollToSection }: NavBarProps) {
                   </div>
                 </motion.div>
               )}
-            </div>
+            </a>
           )
         })}
       </div>

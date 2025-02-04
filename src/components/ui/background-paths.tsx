@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { Cover } from "./cover";
 import { Social } from "../Social";
 import { ButtonColorful } from "./button-colorful";
+import { Button } from "./button";
 
 function FloatingPaths({ position }: { position: number }) {
     const paths = Array.from({ length: 36 }, (_, i) => ({
@@ -113,8 +114,8 @@ export function BackgroundPaths(){
                 </div>
                         {/* ))} */}
 
-                    <div
-                        className="inline-block group relative bg-gradient-to-b from-black/10 to-white/10 
+                    <Button onClick={() => window.open("/safwanresume.pdf", "_blank")}
+                        className="cursor-pointer inline-block group relative bg-gradient-to-b from-black/10 to-white/10 
                         dark:from-white/10 dark:to-black/10 p-px rounded-2xl backdrop-blur-lg 
                         overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 mt-3"
                     >
@@ -136,13 +137,11 @@ export function BackgroundPaths(){
                         </Button> */}
                         <span className="opacity-90 group-hover:opacity-100 transition-opacity">
                                 {/* window open on click */}
-                                <a href="/safwanresume.pdf" target="_blank">
                                     <ButtonColorful 
                                         label="Download Resume"
                                     />
-                                </a>
-                            </span>
-                    </div>
+                        </span>
+                    </Button>
                     <Social  />
                 </motion.div>
             </div>
